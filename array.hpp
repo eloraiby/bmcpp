@@ -1,6 +1,4 @@
-#ifndef ARRAY_HPP
-#define ARRAY_HPP
-
+#pragma once
 #include "cpp-rt.hpp"
 
 namespace BmCpp
@@ -188,5 +186,3 @@ private:
     T*			data;
 };	// struct Array
 }	// BmCpp
-
-#endif // ARRAY_HPP

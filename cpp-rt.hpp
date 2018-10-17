@@ -1,5 +1,4 @@
-#ifndef CPPRT_HPP
-#define CPPRT_HPP
+#pragma once
 
 #include <cstdint>
 #include <cstdlib>
@@ -93,6 +92,3 @@ hashFn<uint32_t>(const uint32_t& hash) {
 }
 
 }
-
-
-#endif // CPPRT_HPP

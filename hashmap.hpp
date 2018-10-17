@@ -1,6 +1,4 @@
-#ifndef HASHMAP_HPP
-#define HASHMAP_HPP
-
+#pragma once
 /*
  * Skia source code
  * Copyright 2015 Google Inc.
@@ -350,5 +348,3 @@ private:
 
 
 }
-
-#endif // HASHMAP_HPP
