@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstdio>
+
 #include "cpp-rt.hpp"
 
 namespace BmCpp
