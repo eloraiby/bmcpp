@@ -10,10 +10,7 @@ set(CMAKE_EXE_LINKER_FLAGS "-Wl,--gc-sections " CACHE INTERNAL "c++ linker flags
 set(CMAKE_CXX_LINK_EXECUTABLE "<CMAKE_C_COMPILER>  <FLAGS> <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS>  -o <TARGET> <LINK_LIBRARIES>")
 
 project(bmcpp)
-include_directories("./")
-add_executable(${PROJECT_NAME} "test/compile-test.cpp")
-
-target_link_libraries(${PROJECT_NAME} -lm -lc)
+include_directories(include)
 
 function(bmcpp_test name)
   add_executable(${name} test/${name}.cpp)
@@ -25,3 +22,4 @@ function(bmcpp_test name)
 endfunction(bmcpp_test)
 
 bmcpp_test(list)
+bmcpp_test(compile-test)

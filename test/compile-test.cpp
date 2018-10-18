@@ -1,10 +1,10 @@
 #include <cstdio>
 #include <memory.h>
 
-#include "array.hpp"
-#include "list.hpp"
-#include "hashmap.hpp"
-#include "string.hpp"
+#include <bmcpp/array.hpp>
+#include <bmcpp/list.hpp>
+#include <bmcpp/hashmap.hpp>
+#include <bmcpp/string.hpp>
 
 using namespace std;
 using namespace BmCpp;
