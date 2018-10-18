@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <cstdlib>
 #include <cassert>
+#include <cstdio>
 
 static inline void fatal(const char* s) { fprintf(stderr, s); abort(); }
 
