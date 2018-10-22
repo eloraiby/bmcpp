@@ -1,9 +1,9 @@
-#ifndef CPPRT_HPP
-#define CPPRT_HPP
+#pragma once
 
 #include <cstdint>
 #include <cstdlib>
 #include <cassert>
+#include <cstdio>
 
 static inline void fatal(const char* s) { fprintf(stderr, s); abort(); }
 
@@ -93,6 +93,3 @@ hashFn<uint32_t>(const uint32_t& hash) {
 }
 
 }
-
-
-#endif // CPPRT_HPP

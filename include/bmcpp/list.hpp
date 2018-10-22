@@ -1,7 +1,6 @@
-#ifndef LIST_HPP
-#define LIST_HPP
+#pragma once
 
-#include "cpp-rt.hpp"
+#include <bmcpp/cpp-rt.hpp>
 
 namespace BmCpp
 {
@@ -310,5 +309,3 @@ private:
     friend struct BaseIterator;
 };	// struct list
 }	// namespace BmCpp
-
-#endif // LIST_HPP
