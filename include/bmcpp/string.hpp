@@ -1,6 +1,7 @@
 #ifndef STRING_HPP
 #define STRING_HPP
 #include <cstring>
+#include "array.hpp"
 namespace BmCpp {
 
 ///

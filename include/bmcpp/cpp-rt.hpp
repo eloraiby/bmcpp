@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <cassert>
 #include <cstdio>
+#include <atomic>
 
 static inline void fatal(const char* s) { fprintf(stderr, s); abort(); }
 
@@ -37,6 +38,20 @@ private:  // emphasize the following members are private
     const NonCopyable& operator=( const NonCopyable& );
 };
 
+template<typename T>
+struct Less {
+    bool	operator()(const T& a, const T& b) const	{ return a < b; }
+};
+
+template <typename T>
+struct Less<T*> {
+    bool operator()(const T* a, const T* b) const	{		return size_t(a) < size_t(b);	}
+};
+
+template<typename T>
+struct EqualTo {
+    bool	operator()(const T& a, const T& b) const	{ return a == b; }
+};
 
 //
 // This is utterly some crappy C++ magic, but we need it
