@@ -4,6 +4,7 @@
 #include <bmcpp/list.hpp>
 #include <bmcpp/hashmap.hpp>
 #include <bmcpp/string.hpp>
+#include <bmcpp/lambda.hpp>
 
 using namespace std;
 using namespace BmCpp;
@@ -44,6 +45,8 @@ int main()
     hm.set(10, 100);
     hm.set(11, 110);
     fprintf(stderr, "hash size: %d\n", hm.count());
+    auto lambda = Lambda<int()>([]() -> int { return 1234; } );
+    fprintf(stderr, "lambda output: %d\n", lambda());
 
     delete b;
     return 0;
